@@ -14,9 +14,9 @@ __global__ void max_pooling(unsigned char* original_img, unsigned char* new_img,
 		max = original_img[position];
 		if (original_img[position + 4] > max)
 			max = original_img[position + 4];
-		if (original_img[position + width] > max)
+		if (original_img[position + width*4] > max)
 			max = original_img[position + width];
-		if (original_img[position + width + 4] > max)
+		if (original_img[position + width*4 + 4] > max)
 			max = original_img[position + width + 1];
 
 		new_img[i] = max;
@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
 		printf("%d: %s\n", error, lodepng_error_text(error));
 		return -1;
 	}
-	printf("%d %d\n",width, height);
+
 	imagesize = width * height * 4 * sizeof(unsigned char);
 	new_img = (unsigned char*)malloc(imagesize/4);
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
 	cudaMalloc((void**)&new_cudaImg, imagesize/4);
 	cudaMemcpy(original_cudaImg, original_img, imagesize, cudaMemcpyHostToDevice);
 
-	max_pooling<< <1, num_thread >> > (original_cudaImg, new_cudaImg, width, num_thread, imagesize);
+	max_pooling<< <1, 1 >> > (original_cudaImg, new_cudaImg, width, num_thread, imagesize);
 
 	cudaDeviceSynchronize();
 	cudaMemcpy(new_img, new_cudaImg, imagesize/4, cudaMemcpyDeviceToHost);

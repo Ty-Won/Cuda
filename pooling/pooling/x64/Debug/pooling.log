@@ -1,5 +1,1 @@
-﻿  Compiling CUDA source file kernel.cu...
-  
-  C:\Users\Mastermind\source\repos\pooling\pooling>"C:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Mastermind\source\repos\pooling\pooling\kernel.cu" 
-  kernel.cu
-  pooling.vcxproj -> C:\Users\Mastermind\source\repos\pooling\x64\Debug\pooling.exe
+﻿  pooling.vcxproj -> C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\x64\Debug\pooling.exe

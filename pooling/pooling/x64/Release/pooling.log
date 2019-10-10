@@ -1,0 +1,37 @@
+﻿  Compiling CUDA source file kernel.cu...
+  Compiling CUDA source file lodepng.cu...
+  
+  C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling>"C:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\kernel.cu.obj "C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\kernel.cu" 
+  
+  C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling>"C:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\lodepng.cu.obj "C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.cu" 
+  kernel.cu
+  lodepng.cu
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(773): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(1437): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(1441): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(1513): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(3435): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(3441): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(4244): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(4292): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(4372): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/pooling/pooling/lodepng.cu(5312): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  lodepng.c
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(773,34): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(1437,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(1441,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(1479,88): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(1513,86): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(1461,1): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(3441,54): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(3435,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(4244,75): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(4292,41): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(4372,59): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\pooling\lodepng.c(5312,1): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+     Creating library C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\x64\Release\pooling.lib and object C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\x64\Release\pooling.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  pooling.vcxproj -> C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\pooling\x64\Release\pooling.exe

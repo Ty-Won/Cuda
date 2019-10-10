@@ -1,1 +1,29 @@
-﻿  rectify.vcxproj -> C:\Users\Mastermind\source\repos\rectify\x64\Debug\rectify.exe
+﻿  Compiling CUDA source file lodepng.cu...
+  
+  C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify>"C:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\lodepng.cu.obj "C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.cu" 
+  lodepng.cu
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(773): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(1437): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(1441): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(1513): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(3435): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(3441): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(4244): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(4292): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(4372): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:/Users/Mastermind/Desktop/McGill/7th semester/ECSE420/git/Cuda/rectify/rectify/lodepng.cu(5312): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  lodepng.c
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(773,34): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(1437,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(1441,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(1479,88): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(1513,86): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(1461,1): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(3441,54): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(3435,1): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(4244,75): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(4292,41): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(4372,59): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\rectify\lodepng.c(5312,1): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+     Creating library C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\x64\Debug\rectify.lib and object C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\x64\Debug\rectify.exp
+  rectify.vcxproj -> C:\Users\Mastermind\Desktop\McGill\7th semester\ECSE420\git\Cuda\rectify\x64\Debug\rectify.exe

@@ -77,18 +77,18 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="..\..\..\..\Desktop\McGill\7th semester\ECSE420\lodepng.cu" />
     <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="lodepng.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lodepng.c" />
+    <Image Include="test.png" />
+    <Image Include="test_rectify.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lodepng.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="test.png" />
-    <Image Include="test_rectify.png" />
+    <ClCompile Include="lodepng.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
