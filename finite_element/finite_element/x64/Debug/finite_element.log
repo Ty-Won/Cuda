@@ -1,0 +1,15 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Mastermind\source\repos\finite_element\finite_element>"C:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include -IC:\Users\Mastermind\Desktop\Utilities\NVDIA\CUDA\Development\include  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Mastermind\source\repos\finite_element\finite_element\kernel.cu" 
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(35): warning : variable "special_case" was declared but never referenced
+  
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(79): warning : variable "special_case" was declared but never referenced
+  
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(113): warning : variable "special_case" was declared but never referenced
+  
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(147): warning : variable "cuda_dummy" was declared but never referenced
+  
+  kernel.cu
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(218): warning C4018: '<': signed/unsigned mismatch
+C:/Users/Mastermind/source/repos/finite_element/finite_element/kernel.cu(147): warning C4101: 'cuda_dummy': unreferenced local variable
+  finite_element.vcxproj -> C:\Users\Mastermind\source\repos\finite_element\x64\Debug\finite_element.exe
