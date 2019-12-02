@@ -7,8 +7,6 @@
 #define MAX_THREAD 1024
 
 
-
-
 int main(int argc, char* argv[])
 {
 
@@ -106,44 +104,8 @@ int main(int argc, char* argv[])
     	
 	
 	}
-	
-    
     free(u);
     free(u1);
     free(u2);
-
-
-
-
-	////Allocate device memory
-	//float* cuda_grid;
-	//cudaMalloc((void**)& cuda_grid, grid_size);;
-
-
-	//cudaMemcpy(cuda_grid, grid, grid_size, cudaMemcpyHostToDevice);
-
-	//int num_blocks = (int)ceil((out_img_height * out_img_width) / num_thread);
-	//int threads_per_block = (int)ceil(num_thread / num_blocks);
-	//printf("num_thread: %d\n", num_thread);
-	//printf("threads_per_block: %d\n", threads_per_block);
-	//for (unsigned int i = 0; i < out_img_size; i = i + num_thread) {
-	//	simu.late << <1, num_thread >> > (cuda_original_img, img_width, img_height, cuda_out_img, c_w_matrix, weight_side_len, i, num_thread);
-	//}
-	//cudaDeviceSynchronize();
-	//cudaMemcpy(out_img, cuda_out_img, out_img_size, cudaMemcpyDeviceToHost);
-
-	//error = lodepng_encode32_file(argv[2], out_img, out_img_width, out_img_height);
-	//if (error) {
-	//	printf("%d: %s\n", error, lodepng_error_text(error));
-	//	return -1;
-	//}
-	//printf("%ul msec", clock() - start);
-
-	//free(original_img);
-	//free(out_img);
-
-	//cudaFree(cuda_original_img);
-	//cudaFree(cuda_out_img);
-
 	return 0;
 }
