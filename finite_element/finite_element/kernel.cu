@@ -10,11 +10,11 @@
 #define P 0.5
 #define G 0.75
 
-#define BLOCKS 1024
-#define THREADS_PER_BLOCK 16
+#define BLOCKS 32
+#define THREADS_PER_BLOCK 64
 
 //Assume square matrix
-#define MATRIX_DIM 4
+#define MATRIX_DIM 512
 
 __global__ void matrix_init(float *matrix, unsigned int tasks, unsigned int matrix_size) {
 	unsigned int id = (threadIdx.x + (blockIdx.x * blockDim.x))*tasks;
@@ -135,7 +135,8 @@ void shift_reference(float* &u0, float* &u1, float* &u2) {
 }
 
 int main(int argc, char* argv[]) {
-
+	
+	clock_t start = clock();
 	if (argc != 2) {
 		printf("Please enter a positive number of iteration as the argument.\n");
 		return -1;
@@ -224,10 +225,10 @@ int main(int argc, char* argv[]) {
 			fprintf(stderr, "cudaMalloc failed!");
 			return -1;
 		}
+		printf("[%d][%d]: %.5f\n", MATRIX_DIM / 2, MATRIX_DIM / 2, u0[MATRIX_DIM / 2 + (MATRIX_DIM / 2) * MATRIX_DIM]);
 	}
-	printf("[%d][%d]: %.5f\n", MATRIX_DIM/2, MATRIX_DIM/2, u0[MATRIX_DIM/2 + (MATRIX_DIM/2)*MATRIX_DIM]);
 
-	printf("Alles ist gut\n");
+	printf("Alles ist gut, %lu msec passed.\n",clock()-start);
 	cudaFree(cuda_u0);
 	cudaFree(cuda_u1);
 	cudaFree(cuda_u2);
